@@ -1,70 +1,162 @@
 import React from "react";
 
 const About = () => {
+  const skills = {
+    frontend: ["React.js", "TypeScript", "JavaScript", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap"],
+    backend: ["Java", "Spring Boot", "RESTful APIs", "MQTT", "Python (Basics)"],
+    databases: ["Supabase (PostgreSQL)", "MySQL"],
+    scadaAutomation: ["SCADA UI/HMI", "PLC Ladder Logic", "Function Block Diagram", "IoT Integration"],
+    tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel"],
+    cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT"]
+  };
+
   return (
-    <section id="about" className="about bg-zinc-900 text-white px-8 py-8 w-full m-0 ">
-      <h2 className="text-3xl font-bold mb-6">About <span className="text-blue-400">Me</span></h2>
-      
-      <div className="mb-8">
-        <p className="mb-4 leading-relaxed text-lg">
-          A passionate <span className="text-blue-400 font-medium">B.Tech graduate in Computer Science</span> with expertise in full-stack development and problem-solving. I specialize in creating efficient, scalable applications with clean code architecture and intuitive user interfaces.
-        </p>
-        <p className="leading-relaxed text-lg">
-          With hands-on experience in both frontend and backend technologies, I bridge the gap between user needs and technical implementation. My approach combines technical precision with creative problem-solving to deliver impactful digital solutions.
-        </p>
-      </div>
+    <section id="about" className="bg-zinc-900 text-white px-6 md:px-8 py-16 md:py-20 w-full">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+          About <span className="text-gradient">Me</span>
+        </h2>
 
-      <div className="mb-8">
-        <h3 className="text-2xl font-semibold mb-4">What I Bring</h3>
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <li className="flex items-start">
-            <span className="text-blue-400 mr-2">▹</span>
-            <span>Full-stack development expertise from concept to deployment</span>
-          </li>
-          <li className="flex items-start">
-            <span className="text-blue-400 mr-2">▹</span>
-            <span>Strong foundation in data structures and algorithms</span>
-          </li>
-          <li className="flex items-start">
-            <span className="text-blue-400 mr-2">▹</span>
-            <span>Experience with both relational and NoSQL databases</span>
-          </li>
-          <li className="flex items-start">
-            <span className="text-blue-400 mr-2">▹</span>
-            <span>Agile development methodologies</span>
-          </li>
-        </ul>
-      </div>
+        <div className="mb-12">
+          <p className="mb-6 leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
+            <span className="text-blue-400 font-medium">Software Engineer (SE-1)</span> at Terracos Technologies with hands-on experience in building industrial and SaaS systems. B.Tech in Computer Science with expertise in full-stack development, SCADA UI/HMI development, and PLC programming.
+          </p>
+          <p className="leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
+            Experienced in <span className="text-purple-400 font-medium">end-to-end feature ownership</span>, from UI design to database architecture and sprint delivery. Specialized in IoT system integration using MQTT and REST APIs, with strong focus on real-time monitoring systems and Agile-based development.
+          </p>
+        </div>
 
-      <div>
-        <h3 className="text-2xl font-semibold mb-4">Technical Skills</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div>
-            <h4 className="text-blue-400 font-medium mb-2">Frontend</h4>
-            <ul className="space-y-1">
-              <li>React.js</li>
-              <li>HTML5 & CSS3</li>
-              <li>JavaScript (ES6+)</li>
-              <li>Bootstrap/Tailwind</li>
-            </ul>
+        <div className="mb-12">
+          <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-center">What I Bring</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            {[
+              "End-to-end feature development: UI design, database design, and sprint delivery",
+              "SCADA UI/HMI dashboards, alarms, and trends for real-time monitoring",
+              "PLC programming using Ladder Logic and Function Block Diagrams",
+              "IoT device integration using MQTT and REST APIs",
+              "Manual and automation testing with AI-assisted tools"
+            ].map((item, index) => (
+              <div key={index} className="glass-effect rounded-lg p-4 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                <div className="flex items-start">
+                  <span className="text-blue-400 mr-3 text-xl">▹</span>
+                  <span className="text-gray-300">{item}</span>
+                </div>
+              </div>
+            ))}
           </div>
-          <div>
-            <h4 className="text-blue-400 font-medium mb-2">Backend</h4>
-            <ul className="space-y-1">
-              <li>Java (Spring Boot)</li>
-              <li>Node.js/Express</li>
-              <li>RESTful APIs</li>
-              <li>Microservices</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-blue-400 font-medium mb-2">Tools & More</h4>
-            <ul className="space-y-1">
-              <li>Git & GitHub</li>
-              <li>MySQL/MongoDB</li>
-              <li>Docker Basics</li>
-              <li>AWS Fundamentals</li>
-            </ul>
+        </div>
+
+        <div>
+          <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Technical Skills</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Frontend Card */}
+            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-blue-500/10 hover:to-purple-500/10 transition-all duration-300 border border-blue-500/20 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/20">
+              <div className="flex items-center mb-4">
+                <svg className="w-8 h-8 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <h4 className="text-xl font-semibold text-blue-400">Frontend</h4>
+              </div>
+              <ul className="space-y-2">
+                {skills.frontend.map((skill, index) => (
+                  <li key={index} className="text-gray-300 flex items-center">
+                    <span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Backend Card */}
+            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-purple-500/10 hover:to-pink-500/10 transition-all duration-300 border border-purple-500/20 hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/20">
+              <div className="flex items-center mb-4">
+                <svg className="w-8 h-8 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                </svg>
+                <h4 className="text-xl font-semibold text-purple-400">Backend</h4>
+              </div>
+              <ul className="space-y-2">
+                {skills.backend.map((skill, index) => (
+                  <li key={index} className="text-gray-300 flex items-center">
+                    <span className="w-2 h-2 bg-purple-400 rounded-full mr-2"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Databases Card */}
+            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-green-500/10 hover:to-emerald-500/10 transition-all duration-300 border border-green-500/20 hover:border-green-400/50 hover:shadow-lg hover:shadow-green-500/20">
+              <div className="flex items-center mb-4">
+                <svg className="w-8 h-8 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                </svg>
+                <h4 className="text-xl font-semibold text-green-400">Databases</h4>
+              </div>
+              <ul className="space-y-2">
+                {skills.databases.map((skill, index) => (
+                  <li key={index} className="text-gray-300 flex items-center">
+                    <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* SCADA & Automation Card */}
+            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-orange-500/10 hover:to-red-500/10 transition-all duration-300 border border-orange-500/20 hover:border-orange-400/50 hover:shadow-lg hover:shadow-orange-500/20">
+              <div className="flex items-center mb-4">
+                <svg className="w-8 h-8 text-orange-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+                <h4 className="text-xl font-semibold text-orange-400">SCADA & Automation</h4>
+              </div>
+              <ul className="space-y-2">
+                {skills.scadaAutomation.map((skill, index) => (
+                  <li key={index} className="text-gray-300 flex items-center">
+                    <span className="w-2 h-2 bg-orange-400 rounded-full mr-2"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Tools Card */}
+            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-cyan-500/10 hover:to-blue-500/10 transition-all duration-300 border border-cyan-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20">
+              <div className="flex items-center mb-4">
+                <svg className="w-8 h-8 text-cyan-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <h4 className="text-xl font-semibold text-cyan-400">Tools</h4>
+              </div>
+              <ul className="space-y-2">
+                {skills.tools.map((skill, index) => (
+                  <li key={index} className="text-gray-300 flex items-center">
+                    <span className="w-2 h-2 bg-cyan-400 rounded-full mr-2"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Cloud & AI Card */}
+            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-pink-500/10 hover:to-rose-500/10 transition-all duration-300 border border-pink-500/20 hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-500/20">
+              <div className="flex items-center mb-4">
+                <svg className="w-8 h-8 text-pink-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                </svg>
+                <h4 className="text-xl font-semibold text-pink-400">Cloud & AI</h4>
+              </div>
+              <ul className="space-y-2">
+                {skills.cloudAI.map((skill, index) => (
+                  <li key={index} className="text-gray-300 flex items-center">
+                    <span className="w-2 h-2 bg-pink-400 rounded-full mr-2"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
