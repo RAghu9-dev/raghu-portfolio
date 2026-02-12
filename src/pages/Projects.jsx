@@ -7,7 +7,7 @@ const Projects = () => {
       description: "A comprehensive desktop banking application featuring secure user authentication, transaction management, balance inquiries, and account operations. Built with Java Swing for an intuitive GUI experience.",
       image: "/ATM.png",
       technologies: ["Java", "Swing", "MySQL", "JDBC"],
-      github: "#",
+      github: "https://github.com/tatrasiamar",
       demo: null,
       type: "Academic Project"
     },
@@ -16,7 +16,7 @@ const Projects = () => {
       description: "Real-time weather dashboard that provides current weather conditions, forecasts, and meteorological data. Features location-based search and responsive design for seamless cross-device experience.",
       image: "/weather_Image.jpg",
       technologies: ["React.js", "Weather API", "CSS3", "JavaScript"],
-      github: "#",
+      github: "https://github.com/tatrasiamar",
       demo: null,
       type: "Personal Project"
     },
@@ -34,7 +34,7 @@ const Projects = () => {
       description: "Full-featured library management solution for tracking books, managing member records, handling checkouts/returns, and generating reports. Includes admin dashboard and user-friendly interface.",
       image: "/Library.jpg",
       technologies: ["Java", "Spring Boot", "MySQL", "Bootstrap"],
-      github: "#",
+      github: "https://github.com/tatrasiamar",
       demo: null,
       type: "Academic Project"
     }

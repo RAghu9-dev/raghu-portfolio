@@ -7,7 +7,7 @@ const About = () => {
     databases: ["Supabase (PostgreSQL)", "MySQL"],
     scadaAutomation: ["SCADA UI/HMI", "PLC Ladder Logic", "Function Block Diagram", "IoT Integration"],
     tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel"],
-    cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT"]
+    cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT", "Antigravity", "Cursor"]
   };
 
   return (
