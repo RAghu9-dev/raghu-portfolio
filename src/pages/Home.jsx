@@ -45,18 +45,14 @@ const Home = () => {
 
           <div className="space-y-4 text-base md:text-lg text-gray-300 mb-8">
             <p>
-              Product-oriented Software Engineer at{" "}
+              Software Engineer at{" "}
               <span className="text-blue-400 font-medium">
                 Terracos Technologies
               </span>{" "}
-              with expertise in building industrial and SaaS systems.
+              specializing in high-compliance SaaS architecture and industrial automation systems.
             </p>
             <p>
-              Specialized in{" "}
-              <span className="text-purple-400 font-medium">
-                Full-Stack Development, SCADA UI/HMI, PLC Programming
-              </span>
-              , and IoT system integration. Experienced with React, TypeScript, Spring Boot, and real-time monitoring systems.
+              Architect of complex digital ecosystems, including an Enterprise Payroll Engine with multi-tenant policy inheritance and mission-critical SCADA monitoring solutions.
             </p>
           </div>
 
@@ -70,7 +66,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
-              href="/Tatrasi_Amar_Resume.pdf"
+              href="/Tatras_Amar_Resume.pdf"
               download
               className="px-8 py-3 border-2 border-blue-400 rounded-lg font-bold text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-105"
             >
