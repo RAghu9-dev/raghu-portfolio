@@ -227,7 +227,8 @@ const Experience = () => {
         "Data Structures & Algorithms in Java – Geeks For Geeks",
         "Java Fundamentals – Oracle Academy",
         "Cloud Computing – IBM via Coursera",
-        "CCNA: Introduction to Networks – CISCO"
+        "CCNA: Introduction to Networks – CISCO",
+        "Claude 101 Certification – Anthropic"
     ];
 
     return (
