@@ -26,6 +26,13 @@ const Footer = () => {
                                 {item.charAt(0).toUpperCase() + item.slice(1)}
                             </a>
                         ))}
+                        <a
+                            href="/Tatras_Amar_Resume.pdf"
+                            download
+                            className="text-blue-400 hover:text-blue-300 font-medium transition-colors duration-200"
+                        >
+                            Resume
+                        </a>
                     </div>
 
                     {/* Social Links */}
