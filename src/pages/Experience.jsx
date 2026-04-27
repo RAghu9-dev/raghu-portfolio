@@ -11,55 +11,84 @@ const Experience = () => {
             period: "Oct 2025 – Present",
             type: "Full-time",
             responsibilities: [
-                "Owned end-to-end feature development including UI design, database design, development, and sprint delivery",
-                "Designed SCADA UI/HMI dashboards, alarms, and trends for real-time monitoring",
-                "Implemented PLC logic using Ladder Logic and Function Block Diagrams",
-                "Developed modular backend services and API integrations using Spring Boot and Supabase",
-                "Integrated IoT devices using MQTT and REST APIs",
-                "Performed manual and automation testing using AI tools to improve delivery speed"
+                "Lead full-lifecycle development of the Terracos B2B SaaS Ecosystem—delivering integrated AMS, BMS, CMS, and HMS solutions with localized data architecture",
+                "Architected a project-wide migration to a modular, feature-based architecture for enhanced multi-tenant maintainability",
+                "Implemented custom Static Site Generation (SSG) and prerendering logic to optimize SEO and sub-second page loads for enterprise clients",
+                "Designed SCADA UI/HMI dashboards with real-time Supabase integration, alarms, and trend visualization",
+                "Implemented complex B2B payroll and 3-layer logic engines, ensuring 100% accuracy in total working hour reports and policy inheritance",
+                "Integrated IoT devices using MQTT and REST APIs for large-scale industrial environmental monitoring"
             ],
             projects: [
                 {
-                    name: "Human Resource Management System (HRMS)",
-                    description: "A centralized workforce management platform designed to automate employee lifecycle operations, integrated with biometric and IoT devices for real-time data.",
+                    name: "HMS – Smart House Management (B2C/B2B)",
+                    description: "Advanced IoT automation platform for residential and luxury environments, integrating climate control and energy analytics.",
                     isRichContent: true,
-                    role: "End-to-End Product Developer",
-                    overview: "The HRMS serves as a digital backbone for HR and facility operations. It integrates with biometric and IoT devices to provide real-time, accurate workforce data, replacing manual processes with automated, auditable workflows.",
+                    role: "Architect & Lead Developer",
+                    overview: "Designed a comprehensive smart-home ecosystem that manages device states across multiple categories. Implemented an 'Extension Table' pattern in the database to allow flexible monitoring of diverse IoT sensors without schema bloat.",
                     problem: [
-                        "Manual attendance handling & delayed approvals",
-                        "Lack of real-time workforce visibility",
-                        "Complex shift planning & inconsistent data"
+                        "Managing diverse device states in a unified schema",
+                        "Real-time synchronization of security and climate data",
+                        "High-latency in device-to-dashboard communication"
                     ],
                     modules: [
-                        { title: "Employee Management", details: "Profiles, Department mapping, Secure onboarding" },
-                        { title: "Attendance & Time Tracking", details: "Real-time check-in/out, Late/early calculations" },
-                        { title: "Leave & Approvals", details: "Multi-level workflows, Audit trails, Status tracking" },
-                        { title: "Shift & Roster", details: "Conflict detection, Future scheduling, Manager visibility" }
+                        { title: "Automation Engine", details: "Rule-based triggers for climate and lighting" },
+                        { title: "Security Hub", details: "Locker access control and real-time surveillance integration" },
+                        { title: "Energy Monitor", details: "Live consumption tracking and trend analysis" }
                     ],
                     architecture: [
-                        "Biometric / IoT Devices",
-                        "MQTT",
-                        "Backend APIs (Spring Boot)",
-                        "Database (PostgreSQL)",
-                        "React + TypeScript Frontend",
-                        "Dashboards / Reports"
+                        "IoT Gateways",
+                        "MQTT / REST",
+                        "Extension Table Layer",
+                        "Real-time Store (Zustand)",
+                        "Secure API Layer"
                     ],
-                    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "PostgreSQL", "MQTT", "Recharts"],
+                    tech: ["React", "TypeScript", "Zustand", "Supabase", "PostgreSQL", "IoT SDKs"],
                     challenges: [
-                        { title: "Real-time synchronization", desc: "Handled live attendance updates while keeping UI responsive." },
-                        { title: "Complex business rules", desc: "Implemented late policies, approvals, shift logic." },
-                        { title: "Scalability", desc: "Designed components capable of supporting growing workforce data." }
+                        { title: "State Management", desc: "Handled complex device state updates using Zustand for zero-lag UI feedback." },
+                        { title: "Database Flexibility", desc: "Designed a schema capable of supporting hundreds of device types via JSONB and extension tables." }
                     ],
                     impact: [
-                        "Reduced manual HR effort",
-                        "Improved attendance accuracy",
-                        "Enabled faster approvals",
-                        "Created a reliable audit mechanism"
+                        "Reduced device communication latency by 50% via MQTT optimization",
+                        "Enabled seamless integration of 10+ new device categories in under 1 week"
                     ]
                 },
                 {
-                    name: "Building Management System (BMS)",
-                    description: "Industrial monitoring and control platform to visualize and manage building-level systems such as access control, sensors, and environmental parameters.",
+                    name: "Enterprise HRMS & Payroll Engine",
+                    description: "High-end, multi-tenant workforce platform featuring a Policy Inheritance Architecture and a 3-Layer Payroll Execution Engine.",
+                    isRichContent: true,
+                    role: "Lead Architect & Product Developer",
+                    overview: "Designed an enterprise ecosystem where Global Rules (Formula Manager) are dynamically overridden by Employee Grades. Optimized attendance reporting logic to handle large datasets and complex industrial cycles (Fixed 26/30 divisors).",
+                    problem: [
+                        "Opaque manual calculations & audit reconciliation gaps",
+                        "Complex industrial OT rules & shift synchronization",
+                        "Inaccurate 'Total Working Hours' due to edge-case punch logic"
+                    ],
+                    modules: [
+                        { title: "Formula Manager", details: "Dynamic divisors (Fixed 26/30), LOP Base, and Attendance Cycles" },
+                        { title: "Attendance Engine", details: "Fixed 400-level query errors and optimized OR/IN filters for large-scale data" },
+                        { title: "3-Layer Logic Engine", details: "Automated OT priorities (Holiday > Sunday > Grade > Global)" }
+                    ],
+                    architecture: [
+                        "Biometric Devices",
+                        "MQTT / REST",
+                        "Policy Inheritance Layer",
+                        "3-Layer Engine",
+                        "Audit Trail",
+                        "Immutable History"
+                    ],
+                    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "PostgreSQL", "Mathjs"],
+                    challenges: [
+                        { title: "Data Integrity", desc: "Resolved critical Supabase query errors that were failing during large-scale attendance fetches." },
+                        { title: "Precision Logic", desc: "Re-engineered total working hour calculations to account for complex multi-shift cycles." }
+                    ],
+                    impact: [
+                        { title: "Zero Error Payroll", desc: "Executed month-end salary runs with 100% accuracy via automated rules." },
+                        { title: "HR Transformation", desc: "Reduced manual payroll auditing effort by 85% for multi-tenant environments." }
+                    ]
+                },
+                {
+                    name: "BMS – Building Management (B2B SaaS)",
+                    description: "High-end industrial B2B platform to visualize and manage building-level systems such as access control, temperature sensors, and power utilities.",
                     isRichContent: true,
                     role: "Frontend & IoT Integration Engineer",
                     overview: "A comprehensive platform for monitoring and controlling building utilities (HVAC, Lighting, Access Control) in real-time. It unifies disparate systems into a single SCADA-like interface for facility managers.",
@@ -83,9 +112,9 @@ const Experience = () => {
                     ],
                     tech: ["React", "TypeScript", "Spring Boot", "MQTT", "SCADA UI/HMI", "Recharts"],
                     challenges: [
-                        { title: "High Frequency Data", desc: "Visualizing rapid changes from hundreds of sensors without UI lag." },
-                        { title: "Protocol Diversity", desc: "Normalizing data from different device protocols." },
-                        { title: "Real-time State", desc: "Managing complex state for device connectivity status." }
+                        { title: "High Frequency Data", desc: "Visualizing rapid changes from hundreds of sensors without UI lag using optimized React reconciliation." },
+                        { title: "SCADA/HMI Integration", desc: "Developed intuitive digital twins for industrial hardware monitoring." },
+                        { title: "Real-time State", desc: "Managing complex state for device connectivity status via MQTT." }
                     ],
                     impact: [
                         "Centralized control reduced manual checks by 40%",
@@ -94,8 +123,8 @@ const Experience = () => {
                     ]
                 },
                 {
-                    name: "Clean Room Monitoring System (CMS)",
-                    description: "System for environments requiring strict compliance and controlled conditions, continuously monitoring critical parameters with real-time visualization.",
+                    name: "CMS – Clean Room Monitoring (B2B SaaS)",
+                    description: "Enterprise system for environments requiring strict industrial compliance, featuring real-time data streaming and automated regulatory reporting.",
                     isRichContent: true,
                     role: "Full Stack Developer",
                     overview: "A specialized environmental monitoring system for pharmaceutical clean rooms. It tracks temperature, humidity, and pressure differentials to ensure compliance with strict industry standards.",
@@ -127,6 +156,39 @@ const Experience = () => {
                         "Ensured 100% compliance with regulatory standards",
                         "Eliminated paper-based recording errors",
                         "Proactive maintenance through trend analysis"
+                    ]
+                },
+                {
+                    name: "SEO & Performance Optimization",
+                    description: "Built a custom SEO framework for React applications to ensure perfect search engine indexing and fast page loads.",
+                    isRichContent: true,
+                    role: "Performance Engineer",
+                    overview: "Implemented dynamic meta tags and pre-rendering logic to make the portfolio SEO-friendly and performant.",
+                    problem: [
+                        "Search engines couldn't read dynamic page content",
+                        "Missing social media previews for individual pages",
+                        "Duplicate content issues without proper canonical links"
+                    ],
+                    modules: [
+                        { title: "Meta Tag Manager", details: "Dynamic titles and descriptions for every page" },
+                        { title: "Pre-rendering", details: "Generates static HTML for faster loading" },
+                        { title: "Canonical Tags", details: "Ensures search engines index the right URLs" }
+                    ],
+                    architecture: [
+                        "Vite Build",
+                        "Pre-render",
+                        "Meta Injection",
+                        "Static HTML",
+                        "Netlify"
+                    ],
+                    tech: ["React", "Vite", "Netlify", "SEO"],
+                    challenges: [
+                        { title: "Dynamic Routing", desc: "Solving path-matching for pre-rendering in a complex nested route structure." },
+                        { title: "Data Consistency", desc: "Ensuring pre-rendered content perfectly matches the client-side hydration state." }
+                    ],
+                    impact: [
+                        { title: "Search Visibility", desc: "Achieved 100% indexation of all dynamic routes on Google Search Console." },
+                        { title: "Performance", desc: "Reduced Time to First Byte (TTFB) by 40% via static delivery." }
                     ]
                 }
             ],
@@ -165,16 +227,29 @@ const Experience = () => {
         "Data Structures & Algorithms in Java – Geeks For Geeks",
         "Java Fundamentals – Oracle Academy",
         "Cloud Computing – IBM via Coursera",
-        "CCNA: Introduction to Networks – CISCO"
+        "CCNA: Introduction to Networks – CISCO",
+        "Claude 101 Certification – Anthropic"
     ];
 
     return (
         <section id="experience" className="bg-black text-white px-6 md:px-8 py-16 md:py-20 w-full">
             <div className="max-w-6xl mx-auto">
                 {/* Professional Experience */}
-                <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
                     Professional <span className="text-gradient">Experience</span>
                 </h2>
+                <div className="flex justify-center mb-12">
+                    <a
+                        href="/Tatras_Amar_Resume.pdf"
+                        download
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-zinc-700 rounded-lg text-blue-400 font-bold transition-all hover:scale-105"
+                    >
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Download Full Resume (PDF)
+                    </a>
+                </div>
 
                 <div className="space-y-8 mb-20">
                     {experiences.map((exp, expIndex) => (
@@ -243,7 +318,7 @@ const Experience = () => {
 
                                                 {/* Tech Stack Pills (Always Visible) */}
                                                 <div className="flex flex-wrap gap-2 mb-2">
-                                                    {project.tech.slice(0, 5).map((tech, idx) => (
+                                                    {project.tech.map((tech, idx) => (
                                                         <span
                                                             key={idx}
                                                             className="px-2 py-1 text-xs bg-blue-500/10 text-blue-400 rounded border border-blue-500/30"
@@ -251,9 +326,6 @@ const Experience = () => {
                                                             {tech}
                                                         </span>
                                                     ))}
-                                                    {project.tech.length > 5 && (
-                                                        <span className="px-2 py-1 text-xs text-gray-500">+{project.tech.length - 5} more</span>
-                                                    )}
                                                 </div>
 
                                                 {/* Expanded Content */}
@@ -340,9 +412,16 @@ const Experience = () => {
                                                                     <h6 className="text-sm font-semibold text-blue-400 mb-2 uppercase tracking-wider">Project Impact</h6>
                                                                     <div className="flex flex-wrap gap-x-6 gap-y-2">
                                                                         {project.impact.map((imp, idx) => (
-                                                                            <span key={idx} className="flex items-center text-sm text-gray-300">
-                                                                                <span className="text-blue-500 mr-2">✓</span>
-                                                                                {imp}
+                                                                            <span key={idx} className="flex items-start text-sm text-gray-300">
+                                                                                <span className="text-blue-500 mr-2 mt-0.5">✓</span>
+                                                                                {typeof imp === 'string' ? (
+                                                                                    <span>{imp}</span>
+                                                                                ) : (
+                                                                                    <span>
+                                                                                        <span className="font-semibold text-blue-400">{imp.title}: </span>
+                                                                                        {imp.desc}
+                                                                                    </span>
+                                                                                )}
                                                                             </span>
                                                                         ))}
                                                                     </div>

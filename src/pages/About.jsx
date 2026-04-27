@@ -7,7 +7,8 @@ const About = () => {
     databases: ["Supabase (PostgreSQL)", "MySQL"],
     scadaAutomation: ["SCADA UI/HMI", "PLC Ladder Logic", "Function Block Diagram", "IoT Integration"],
     tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel"],
-    cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT", "Antigravity", "Cursor"]
+    cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT", "Antigravity", "Cursor"],
+    b2bSaaS: ["Multi-tenant Architecture", "Payroll & Logic Engines", "SaaS Product Design", "Enterprise Integrations", "Industrial Compliance"]
   };
 
   return (
@@ -19,10 +20,10 @@ const About = () => {
 
         <div className="mb-12">
           <p className="mb-6 leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-            <span className="text-blue-400 font-medium">Software Engineer (SE-1)</span> at Terracos Technologies with hands-on experience in building industrial and SaaS systems. B.Tech in Computer Science with expertise in full-stack development, SCADA UI/HMI development, and PLC programming.
+            <span className="text-blue-400 font-medium">Software Engineer</span> at Terracos Technologies, specializing in the architecture of high-performance industrial and SaaS ecosystems. My background combines Computer Science expertise with practical implementation of SCADA UI/HMI and PLC automation.
           </p>
           <p className="leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-            Experienced in <span className="text-purple-400 font-medium">end-to-end feature ownership</span>, from UI design to database architecture and sprint delivery. Specialized in IoT system integration using MQTT and REST APIs, with strong focus on real-time monitoring systems and Agile-based development.
+            I drive the <span className="text-purple-400 font-medium">full-lifecycle development</span> of technical products, bridging the gap between hardware (IoT/MQTT) and scalable software architectures. My focus is on delivering mission-critical monitoring systems with a commitment to Agile precision and robust engineering.
           </p>
         </div>
 
@@ -30,11 +31,13 @@ const About = () => {
           <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-center">What I Bring</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {[
-              "End-to-end feature development: UI design, database design, and sprint delivery",
-              "SCADA UI/HMI dashboards, alarms, and trends for real-time monitoring",
-              "PLC programming using Ladder Logic and Function Block Diagrams",
-              "IoT device integration using MQTT and REST APIs",
-              "Manual and automation testing with AI-assisted tools"
+              "Agile & Scrum Orchestration: Full-lifecycle delivery from UI/DB design to final Sprints",
+              "B2B SaaS Ecosystem: Architecting AMS, BMS, and CMS as integrated enterprise solutions",
+              "Enterprise Payroll Engine: Multi-tenant Policy Inheritance & 3-Layer Logic Engine",
+              "Industrial IoT (IIoT): Real-time monitoring for Clean Room compliance & SCADA systems",
+              "Smart House Management (HMS): Architecting flexible IoT state & device integration",
+              "Database Optimization: Solving high-scale Supabase query & attendance logic challenges",
+              "SEO Optimization: Implementing dynamic meta tags and pre-rendering for better search visibility"
             ].map((item, index) => (
               <div key={index} className="glass-effect rounded-lg p-4 hover:bg-white/10 transition-all duration-300 hover:scale-105">
                 <div className="flex items-start">
@@ -152,6 +155,24 @@ const About = () => {
                 {skills.cloudAI.map((skill, index) => (
                   <li key={index} className="text-gray-300 flex items-center">
                     <span className="w-2 h-2 bg-pink-400 rounded-full mr-2"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* B2B & SaaS Card */}
+            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-yellow-500/10 hover:to-orange-500/10 transition-all duration-300 border border-yellow-500/20 hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-500/20">
+              <div className="flex items-center mb-4">
+                <svg className="w-8 h-8 text-yellow-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <h4 className="text-xl font-semibold text-yellow-400">B2B & SaaS</h4>
+              </div>
+              <ul className="space-y-2">
+                {skills.b2bSaaS.map((skill, index) => (
+                  <li key={index} className="text-gray-300 flex items-center">
+                    <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
                     {skill}
                   </li>
                 ))}
