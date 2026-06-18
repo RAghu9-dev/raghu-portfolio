@@ -6,7 +6,7 @@ const Home = () => {
       id="home"
       className="relative w-full min-h-screen text-white flex flex-col justify-center items-center px-6 py-24 overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%)',
+        background: 'linear-gradient(135deg,bg-gray-700)',
       }}
     >
       {/* Animated Background Gradient Overlay */}
