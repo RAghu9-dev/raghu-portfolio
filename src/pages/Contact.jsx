@@ -7,8 +7,8 @@ const Contact = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       ),
       title: "Email",
-      link: "mailto:tatrasiamar123@gmail.com",
-      text: "tatrasiamar123@gmail.com",
+      link: "mailto:singireddyraghuvardhanreddy@gmail.com",
+      text: "singireddyraghuvardhanreddy@gmail.com",
       color: "blue"
     },
     {
@@ -16,8 +16,8 @@ const Contact = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
       ),
       title: "Phone",
-      link: "tel:+917330807277",
-      text: "+91 7330807277",
+      link: "tel:+917601075424",
+      text: "+91 7601075424",
       color: "purple"
     },
     {
@@ -25,8 +25,8 @@ const Contact = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       ),
       title: "LinkedIn",
-      link: "https://linkedin.com/in/amar-tatrasi",
-      text: "linkedin.com/in/amar-tatrasi",
+      link: "https://www.linkedin.com/in/singireddyraghu19433",
+      text: "linkedin.com/in/singireddyraghu19433",
       color: "cyan"
     },
     {
@@ -34,8 +34,8 @@ const Contact = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
       ),
       title: "GitHub",
-      link: "https://github.com/tatrasiamar",
-      text: "github.com/tatrasiamar",
+      link: "https://github.com/RAghu9-dev",
+      text: "github.com/RAghu9-dev",
       color: "pink"
     }
   ];
@@ -98,7 +98,7 @@ const Contact = () => {
         <div className="mt-12 text-center">
           <p className="text-gray-400 mb-6">Let's build something amazing together!</p>
           <a
-            href="mailto:tatrasiamar123@gmail.com"
+            href="mailto:singireddyraghuvardhanreddy@gmail.com"
             className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg font-bold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105"
           >
             Send Me an Email

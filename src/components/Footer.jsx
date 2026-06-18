@@ -10,14 +10,14 @@ const Footer = () => {
                     {/* Brand */}
                     <div className="text-center md:text-left">
                         <h3 className="text-xl font-bold mb-2">
-                            <span className="text-gradient">Amar Tatrasi</span>
+                            <span className="text-gradient">Singireddy Raghuvardhan Reddy</span>
                         </h3>
-                        <p className="text-gray-400 text-sm">Full Stack Developer</p>
+                        <p className="text-gray-400 text-sm">Python Full Stack Developer</p>
                     </div>
 
                     {/* Quick Links */}
                     <div className="flex gap-6 text-sm">
-                        {["home", "about", "experience", "projects", "contact"].map((item) => (
+                        {["home", "about", "projects", "contact"].map((item) => (
                             <a
                                 key={item}
                                 href={`#${item}`}
@@ -27,7 +27,7 @@ const Footer = () => {
                             </a>
                         ))}
                         <a
-                            href="/Tatras_Amar_Resume.pdf"
+                            href="/Raghu_Resume.pdf"
                             download
                             className="text-blue-400 hover:text-blue-300 font-medium transition-colors duration-200"
                         >
@@ -38,7 +38,7 @@ const Footer = () => {
                     {/* Social Links */}
                     <div className="flex gap-4">
                         <a
-                            href="https://github.com/tatrasiamar"
+                            href="https://github.com/RAghu9-dev"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 hover:bg-blue-500 transition-all duration-300 hover:scale-110"
@@ -49,7 +49,7 @@ const Footer = () => {
                             </svg>
                         </a>
                         <a
-                            href="https://linkedin.com/in/amar-tatrasi"
+                            href="https://www.linkedin.com/in/singireddyraghu19433"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 hover:bg-blue-500 transition-all duration-300 hover:scale-110"
@@ -60,7 +60,7 @@ const Footer = () => {
                             </svg>
                         </a>
                         <a
-                            href="mailto:tatrasiamar123@gmail.com"
+                            href="mailto:singireddyraghuvardhanreddy@gmail.com"
                             className="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 hover:bg-purple-500 transition-all duration-300 hover:scale-110"
                             aria-label="Email"
                         >
@@ -74,7 +74,7 @@ const Footer = () => {
                 {/* Copyright */}
                 <div className="mt-8 pt-6 border-t border-zinc-800 text-center">
                     <p className="text-gray-400 text-sm">
-                        © {currentYear} Amar Tatrasi. Made with{" "}
+                        © {currentYear} Raghuvardhan Reddy. Made with{" "}
                         <span className="text-red-500">❤</span> using React & Tailwind CSS
                     </p>
                 </div>

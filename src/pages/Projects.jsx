@@ -1,34 +1,22 @@
 import React from "react";
 
 const Projects = () => {
-  const professionalEcosystem = {
-    title: "Terracos B2B SaaS Ecosystem",
-    subtitle: "Enterprise-Grade Industrial Solutions",
-    description: "A unified suite of high-performance monitoring and management platforms built for industrial automation and workforce optimization. Features real-time Supabase integrations, IIoT connectivity, and multi-tenant architecture.",
-    products: [
-      { name: "AMS", full: "Attendance Management", icon: "📊", color: "blue" },
-      { name: "BMS", full: "Building Management", icon: "🏢", color: "red" },
-      { name: "CMS", full: "Clean Room Monitoring", icon: "🧪", color: "emerald" },
-      { name: "HMS", full: "Smart House Management", icon: "🏠", color: "purple" }
-    ]
-  };
-
   const projects = [
     {
-      title: "ATM Simulator Bank Management System",
-      description: "A comprehensive desktop banking application featuring secure user authentication, transaction management, balance inquiries, and account operations. Built with Java Swing for an intuitive GUI experience.",
-      image: "/ATM.png",
-      technologies: ["Java", "Swing", "MySQL", "JDBC"],
-      github: "https://github.com/tatrasiamar",
+      title: "Hotel Management & Booking System",
+      description: "Built a full-stack Hotel Booking System using Django with user authentication, vendor dashboard, hotel listing management, image uploads, and booking functionality, designed with scalable backend logic and a clean, production-ready project structure.",
+      image: "/hotel_pic_portfolio.jpg",
+      technologies: ["Python", "Django", "PostgreSQL", "HTML", "CSS", "Javascript"],
+      github: "https://github.com/RAghu9-dev",
       demo: null,
-      type: "Academic Project"
+      type: "Personal Project"
     },
     {
       title: "Weather Application",
       description: "Real-time weather dashboard that provides current weather conditions, forecasts, and meteorological data. Features location-based search and responsive design for seamless cross-device experience.",
       image: "/weather_Image.jpg",
       technologies: ["React.js", "Weather API", "CSS3", "JavaScript"],
-      github: "https://github.com/tatrasiamar",
+      github: "https://github.com/RAghu9-dev",
       demo: null,
       type: "Personal Project"
     },
@@ -37,92 +25,16 @@ const Projects = () => {
       description: "Modern, responsive portfolio showcasing projects and skills with smooth animations, glassmorphism effects, and mobile-first design. Built with React and Tailwind CSS for optimal performance.",
       image: "/portfolio_Image.png",
       technologies: ["React", "Tailwind CSS", "Vite", "JavaScript"],
-      github: "https://github.com/tatrasiamar",
+      github: "https://github.com/RAghu9-dev",
       demo: null,
       type: "Personal Project"
     },
-    {
-      title: "Library Management System",
-      description: "Full-featured library management solution for tracking books, managing member records, handling checkouts/returns, and generating reports. Includes admin dashboard and user-friendly interface.",
-      image: "/Library.jpg",
-      technologies: ["Java", "Spring Boot", "MySQL", "Bootstrap"],
-      github: "https://github.com/tatrasiamar",
-      demo: null,
-      type: "Academic Project"
-    }
+    
   ];
 
   return (
     <section id="projects" className="bg-zinc-900 text-white px-6 md:px-8 py-16 md:py-20 w-full min-h-screen">
       <div className="max-w-7xl mx-auto">
-
-        {/* Professional Ecosystem Showcase */}
-        <div className="mb-24">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Professional <span className="text-gradient">Showcase</span>
-            </h2>
-            <div className="w-24 h-1 bg-blue-500 mx-auto rounded-full mb-6"></div>
-          </div>
-
-          <div className="glass-effect rounded-3xl p-8 md:p-12 border border-blue-500/20 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] -mr-32 -mt-32 rounded-full"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 blur-[100px] -ml-32 -mb-32 rounded-full"></div>
-
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <span className="px-4 py-1.5 bg-blue-500/20 text-blue-400 rounded-full text-sm font-bold tracking-wider uppercase border border-blue-500/30 mb-6 inline-block">
-                  Industrial B2B SaaS
-                </span>
-                <h3 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-                  {professionalEcosystem.title}
-                </h3>
-                <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                  {professionalEcosystem.description}
-                </p>
-                <div className="flex flex-wrap gap-4 mb-8">
-                  {professionalEcosystem.products.map((prod, idx) => (
-                    <div key={idx} className="flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-3 rounded-xl">
-                      <span className="text-2xl">{prod.icon}</span>
-                      <div>
-                        <p className="text-xs text-gray-400 font-bold uppercase tracking-tighter">{prod.name}</p>
-                        <p className="text-sm text-white font-medium">{prod.full}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <a
-                  href="#experience"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 shadow-lg shadow-blue-500/20"
-                >
-                  View Enterprise Case Studies
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </a>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="h-48 bg-gradient-to-br from-blue-600 to-blue-900 rounded-2xl border border-white/10 shadow-inner flex items-center justify-center p-6 text-center transform translate-y-6">
-                    <p className="text-sm font-medium text-blue-100">Real-time IoT State Management</p>
-                  </div>
-                  <div className="h-48 bg-zinc-800/80 rounded-2xl border border-white/5 shadow-inner flex items-center justify-center p-6 text-center">
-                    <p className="text-sm font-medium text-gray-400">Multi-tenant Policy Layers</p>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="h-48 bg-zinc-800/80 rounded-2xl border border-white/5 shadow-inner flex items-center justify-center p-6 text-center">
-                    <p className="text-sm font-medium text-gray-400">Audit-Ready Reporting</p>
-                  </div>
-                  <div className="h-48 bg-gradient-to-tr from-purple-600 to-pink-900 rounded-2xl border border-white/10 shadow-inner flex items-center justify-center p-6 text-center transform -translate-y-6">
-                    <p className="text-sm font-medium text-purple-100">Integrated SCADA Dashboards</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Personal & Academic Section */}
         <div className="pt-8 border-t border-zinc-800">

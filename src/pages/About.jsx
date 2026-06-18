@@ -2,13 +2,12 @@ import React from "react";
 
 const About = () => {
   const skills = {
-    frontend: ["React.js", "TypeScript", "JavaScript", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap"],
-    backend: ["Java", "Spring Boot", "RESTful APIs", "MQTT", "Python (Basics)"],
-    databases: ["Supabase (PostgreSQL)", "MySQL"],
-    scadaAutomation: ["SCADA UI/HMI", "PLC Ladder Logic", "Function Block Diagram", "IoT Integration"],
-    tools: ["Git & GitHub", "VS Code", "Postman", "Selenium", "Vercel"],
+    frontend: ["React.js", "JavaScript (ES6+)", "HTML5 & CSS3"],
+    backend: ["Python", "Django Framework", "RESTful APIs"],
+    databases: ["MySQL","PostgreSQL","Oracle"],
+    tools: ["Git & GitHub", "VS Code", "Postman", "Vercel"],
     cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT", "Antigravity", "Cursor"],
-    b2bSaaS: ["Multi-tenant Architecture", "Payroll & Logic Engines", "SaaS Product Design", "Enterprise Integrations", "Industrial Compliance"]
+    Development_Concepts: ["Authentication", "Authorization", "OOPS", "Debugging", "API Integration"],
   };
 
   return (
@@ -20,34 +19,13 @@ const About = () => {
 
         <div className="mb-12">
           <p className="mb-6 leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-            <span className="text-blue-400 font-medium">Software Engineer</span> at Terracos Technologies, specializing in the architecture of high-performance industrial and SaaS ecosystems. My background combines Computer Science expertise with practical implementation of SCADA UI/HMI and PLC automation.
+           I am a fresher Python Full Stack Developer with strong knowledge of  <span className="text-blue-400 font-medium">Python, Django, Django REST Framework, Django ORM, AWS (basic), HTML, CSS, JavaScript, React, Tailwind CSS, MySQL, PostgreSQL, Git, and GitHub.</span> 
           </p>
           <p className="leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-            I drive the <span className="text-purple-400 font-medium">full-lifecycle development</span> of technical products, bridging the gap between hardware (IoT/MQTT) and scalable software architectures. My focus is on delivering mission-critical monitoring systems with a commitment to Agile precision and robust engineering.
+            I have hands-on experience in building web applications and REST APIs through projects such as a <span className="text-purple-400 font-medium">Django Hotel Booking Application, Student/Employee REST API, Weather app and an IoT-Based Animal Tracking System.</span> I am passionate about backend development, database design, API development, and creating user-friendly web applications.
           </p>
         </div>
 
-        <div className="mb-12">
-          <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-center">What I Bring</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-            {[
-              "Agile & Scrum Orchestration: Full-lifecycle delivery from UI/DB design to final Sprints",
-              "B2B SaaS Ecosystem: Architecting AMS, BMS, and CMS as integrated enterprise solutions",
-              "Enterprise Payroll Engine: Multi-tenant Policy Inheritance & 3-Layer Logic Engine",
-              "Industrial IoT (IIoT): Real-time monitoring for Clean Room compliance & SCADA systems",
-              "Smart House Management (HMS): Architecting flexible IoT state & device integration",
-              "Database Optimization: Solving high-scale Supabase query & attendance logic challenges",
-              "SEO Optimization: Implementing dynamic meta tags and pre-rendering for better search visibility"
-            ].map((item, index) => (
-              <div key={index} className="glass-effect rounded-lg p-4 hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                <div className="flex items-start">
-                  <span className="text-blue-400 mr-3 text-xl">▹</span>
-                  <span className="text-gray-300">{item}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         <div>
           <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Technical Skills</h3>
@@ -106,23 +84,6 @@ const About = () => {
               </ul>
             </div>
 
-            {/* SCADA & Automation Card */}
-            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-orange-500/10 hover:to-red-500/10 transition-all duration-300 border border-orange-500/20 hover:border-orange-400/50 hover:shadow-lg hover:shadow-orange-500/20">
-              <div className="flex items-center mb-4">
-                <svg className="w-8 h-8 text-orange-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                </svg>
-                <h4 className="text-xl font-semibold text-orange-400">SCADA & Automation</h4>
-              </div>
-              <ul className="space-y-2">
-                {skills.scadaAutomation.map((skill, index) => (
-                  <li key={index} className="text-gray-300 flex items-center">
-                    <span className="w-2 h-2 bg-orange-400 rounded-full mr-2"></span>
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* Tools Card */}
             <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-cyan-500/10 hover:to-blue-500/10 transition-all duration-300 border border-cyan-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20">
@@ -161,23 +122,23 @@ const About = () => {
               </ul>
             </div>
 
-            {/* B2B & SaaS Card */}
-            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-yellow-500/10 hover:to-orange-500/10 transition-all duration-300 border border-yellow-500/20 hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-500/20">
+            {/* Developement concepts */}
+               <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-pink-500/10 hover:to-rose-500/10 transition-all duration-300 border border-pink-500/20 hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-500/20">
               <div className="flex items-center mb-4">
-                <svg className="w-8 h-8 text-yellow-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                <svg className="w-8 h-8 text-pink-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                 </svg>
-                <h4 className="text-xl font-semibold text-yellow-400">B2B & SaaS</h4>
+                <h4 className="text-xl font-semibold text-pink-400"></h4>
               </div>
               <ul className="space-y-2">
-                {skills.b2bSaaS.map((skill, index) => (
+                {skills.Development_Concepts.map((skill, index) => (
                   <li key={index} className="text-gray-300 flex items-center">
-                    <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
+                    <span className="w-2 h-2 bg-pink-400 rounded-full mr-2"></span>
                     {skill}
                   </li>
                 ))}
               </ul>
-            </div>
+            </div>      
           </div>
         </div>
       </div>

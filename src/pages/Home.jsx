@@ -22,8 +22,8 @@ const Home = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-xl opacity-40 animate-pulse"></div>
             <img
-              src="/profile.jpeg"
-              alt="Tatrasi Amar"
+              src="/profile.jpg"
+              alt="Singireddy Raghuvardhan Reddy"
               className="relative w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-transparent bg-gradient-to-r from-blue-500 to-purple-600 p-1 shadow-2xl transition-transform duration-500 hover:scale-105"
             />
           </div>
@@ -36,23 +36,37 @@ const Home = () => {
           </h3>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Tatrasi Amar
+              Singireddy Raghuvardhan Reddy
             </span>
           </h1>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 text-gray-200">
-            Software Engineer | Full Stack Developer
+            Software Engineer | Python Full Stack Developer
           </h2>
 
           <div className="space-y-4 text-base md:text-lg text-gray-300 mb-8">
             <p>
-              Software Engineer at{" "}
+              A {" "}
               <span className="text-blue-400 font-medium">
-                Terracos Technologies
+                Python Full Stack Developer 
               </span>{" "}
-              specializing in high-compliance SaaS architecture and industrial automation systems.
+              passionate about building digital solution
             </p>
             <p>
-              Architect of complex digital ecosystems, including an Enterprise Payroll Engine with multi-tenant policy inheritance and mission-critical SCADA monitoring solutions.
+              Electronics and Communication Engineering graduate specializing in {" "}
+               <span className="text-blue-400 font-medium">
+                Python, Django Framework, React and full-stack development.
+              </span>{" "}
+              I transform complex problems into elegant efficient solutions through clean code and innovative thinking.
+            </p>
+             
+            <p>
+              With experience in both {" "}
+              <span className="text-blue-400 font-medium">
+                 frontend and backend technologies
+              </span>{" "},I bridge the gap between user experience and technical implementation. My projects demonstrate strong problem-solving skills and attention to detail.
+            </p>
+            <p>
+              Currently seeking opportunities to contribute my skils to meaningful projects while continuing to grow as a developer in a collaborative environment.
             </p>
           </div>
 
@@ -66,7 +80,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
-              href="/Tatras_Amar_Resume.pdf"
+              href="/Raghu_Resume.pdf"
               download
               className="px-8 py-3 border-2 border-blue-400 rounded-lg font-bold text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-105"
             >
@@ -77,7 +91,7 @@ const Home = () => {
           {/* Social Media Links */}
           <div className="flex gap-4 justify-center md:justify-start">
             <a
-              href="https://github.com/tatrasiamar"
+              href="https://github.com/RAghu9-dev"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-500 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50"
@@ -88,7 +102,7 @@ const Home = () => {
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/amar-tatrasi"
+              href="https://www.linkedin.com/in/singireddyraghu19433"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-500 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50"
@@ -99,7 +113,7 @@ const Home = () => {
               </svg>
             </a>
             <a
-              href="mailto:tatrasiamar123@gmail.com"
+              href="mailto:singireddyraghuvardhanreddy@gmail.com"
               className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-purple-500 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/50"
               aria-label="Email"
             >

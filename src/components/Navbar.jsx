@@ -7,7 +7,7 @@ const Navbar = () => {
   // Track active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "experience", "projects", "contact"];
+      const sections = ["home", "about", "projects", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -40,12 +40,12 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
         {/* Logo */}
         <div className="text-white text-xl md:text-2xl font-bold">
-          <span className="text-gradient">Amar Tatrasi</span>
+          <span className="text-gradient">Singireddy Raghuvardhan Reddy</span>
         </div>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8 text-white">
-          {["home", "about", "experience", "projects", "contact"].map((item) => (
+          {["home", "about", "projects", "contact"].map((item) => (
             <li key={item}>
               <a
                 href={`#${item}`}
@@ -100,7 +100,7 @@ const Navbar = () => {
           }`}
       >
         <ul className="flex flex-col space-y-4 px-6 py-6">
-          {["home", "about", "experience", "projects", "contact"].map((item) => (
+          {["home", "about", "projects", "contact"].map((item) => (
             <li key={item}>
               <a
                 href={`#${item}`}
