@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
@@ -14,7 +13,6 @@ function App() {
       <main>
         <Home />
         <About />
-        <Experience />
         <Projects />
         <Contact />
       </main>
