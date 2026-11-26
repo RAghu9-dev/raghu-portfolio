@@ -29,7 +29,16 @@ const Projects = () => {
       demo: null,
       type: "Personal Project"
     },
-    
+    {
+      title: "CoolBreeze AC AI-Powered Employee Management System",
+      description: "Developed an AI-powered customer support system using Python, Django, and Google Gemini API. Implemented AI-driven customer support, automated query handling, and intelligent response generation to improve customer service efficiency. Integrated backend functionality and deployed the application on Render.",
+      image: "/customer_support_ai.png",
+      technologies: ["Python", "Django", "HTML", "CSS", "Javascript", "Google Gemini API", "RAG", " PostgreSQL"],
+      github: "https://github.com/RAghu9-dev",
+      demo: null,
+      type: "Personal Project"
+    },
+
   ];
 
   return (

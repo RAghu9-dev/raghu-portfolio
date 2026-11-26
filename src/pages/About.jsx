@@ -3,10 +3,10 @@ import React from "react";
 const About = () => {
   const skills = {
     frontend: ["React.js", "JavaScript (ES6+)", "HTML5 & CSS3"],
-    backend: ["Python", "Django Framework", "RESTful APIs"],
-    databases: ["MySQL","PostgreSQL","Oracle"],
-    tools: ["Git & GitHub", "VS Code", "Postman", "Vercel"],
-    cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT", "Antigravity", "Cursor"],
+    backend: ["Python", "Django", "Django Rest-Framework", "RESTful API", "FastAPI"],
+    databases: ["MySQL", "PostgreSQL"],
+    tools: ["Git & GitHub", "VS Code", "Postman", "Vercel", "Render"],
+    cloudAI: ["AWS (Basics)", "GitHub Copilot", "ChatGPT", "Antigravity"],
     Development_Concepts: ["Authentication", "Authorization", "OOPS", "Debugging", "API Integration"],
   };
 
@@ -19,7 +19,7 @@ const About = () => {
 
         <div className="mb-12">
           <p className="mb-6 leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
-           I am a fresher Python Full Stack Developer with strong knowledge of  <span className="text-blue-400 font-medium">Python, Django, Django REST Framework, Django ORM, AWS (basic), HTML, CSS, JavaScript, React, Tailwind CSS, MySQL, PostgreSQL, Git, and GitHub.</span> 
+            I am a fresher Python Full Stack Developer with strong knowledge of  <span className="text-blue-400 font-medium">Python, Django, Django REST Framework, Django ORM, AWS (basic), HTML, CSS, JavaScript, React, Tailwind CSS, MySQL, PostgreSQL, Git, and GitHub.</span>
           </p>
           <p className="leading-relaxed text-lg text-gray-300 text-center max-w-4xl mx-auto">
             I have hands-on experience in building web applications and REST APIs through projects such as a <span className="text-purple-400 font-medium">Django Hotel Booking Application, Student/Employee REST API, Weather app and an IoT-Based Animal Tracking System.</span> I am passionate about backend development, database design, API development, and creating user-friendly web applications.
@@ -123,7 +123,7 @@ const About = () => {
             </div>
 
             {/* Developement concepts */}
-               <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-pink-500/10 hover:to-rose-500/10 transition-all duration-300 border border-pink-500/20 hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-500/20">
+            <div className="glass-effect rounded-xl p-6 hover:bg-gradient-to-br hover:from-pink-500/10 hover:to-rose-500/10 transition-all duration-300 border border-pink-500/20 hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-500/20">
               <div className="flex items-center mb-4">
                 <svg className="w-8 h-8 text-pink-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
@@ -138,7 +138,7 @@ const About = () => {
                   </li>
                 ))}
               </ul>
-            </div>      
+            </div>
           </div>
         </div>
       </div>

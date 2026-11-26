@@ -27,7 +27,7 @@ const Footer = () => {
                             </a>
                         ))}
                         <a
-                            href="/Raghu_Resume.pdf"
+                            href="/Raghu_ai-developer_resume.pdf"
                             download
                             className="text-blue-400 hover:text-blue-300 font-medium transition-colors duration-200"
                         >
