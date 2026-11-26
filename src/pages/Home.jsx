@@ -102,7 +102,7 @@ const Home = () => {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/in/singireddyraghu19433"
+              href="https://www.linkedin.com/in/raghuvardhan19433/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-500 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50"
